@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <script src="login.js"></script>
+    <div class="allforms">
+    <form  id="login" onsubmit="  login() ; return false;">
+        <h3>login</h3>
+        <label>Username</label><br>
+        <input id="Lusername" type="text"><br><br>
+
+        <label>Password</label><br>
+        <input id="Lpassword" type="password"><br><br>
+
+        <input type="submit" value="sign in"><br><br>
+    </form>
+
+    <form  id="signup" onsubmit="return signup()">
+        <h3>sign up</h3>
+        <label>Username</label><br>
+        <input type="text" id="Susername"><br><br>
+
+        <label>Password</label><br>
+        <input type="password" id="Spassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"><br><br>
+
+        <label>Confirm Password</label><br>
+        <input type="password" id="conpassword"><br><br>
+                                       
+
+        <label>Email</label><br>
+        <input type="email" id="email"><br><br>
+
+        <label>Age</label><br>
+        <input type="number" id="age" min="18" max="60" ><br><br>
+
+        
+        <label>phone number</label><br>
+        <input type="tel" id="phnum"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+
+        <label>Gender</label><br>
+        <label>Male</label>
+        <input type="radio" id="male" name="gender"><br>
+        <label>Female</label>
+        <input type="radio" id="female" name="gender"><br><br>
+
+        <label>city</label><br>
+        <select id="cities">
+            <option>Giza</option>
+            <option>Cairo</option>
+            <option>Alexandria</option>
+        </select><br><br>
+
+        <input type="submit" value="sign up">
+    </form>
+
+    <form onsubmit="return resetpass()">
+        <h3>login</h3>
+        <label>Username</label><br>
+        <input id="Fusername" type="text"><br><br>
+
+        <label>New Password</label><br>
+        <input id="Fpassword" type="password"><br><br>
+
+        <input type="submit">
+    </form>
+</div>
+</body>
+</html>
